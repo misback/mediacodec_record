@@ -9,7 +9,7 @@ import java.nio.ByteBuffer;
 public class MediaMuxerWrapper {
 	private static final String TAG = MediaMuxerWrapper.class.getSimpleName();
 	private String outPutPath;
-	private MediaMuxer mediaMuxer;	// API >= 18
+	private MediaMuxer mediaMuxer;	
 	private volatile int mEncoderCount = 0;
 	private volatile int mStartCount = 0;
 	private volatile long mVideoEncodeCount = 0;

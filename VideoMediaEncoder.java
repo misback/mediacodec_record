@@ -21,8 +21,8 @@ import java.nio.ByteBuffer;
 
 public class VideoMediaEncoder extends MediaEncoder {
     public static final String TAG = VideoMediaEncoder.class.getSimpleName();
-    private static final int FRAME_RATE = 30;               // 30fps
-    public static final int IFRAME_INTERVAL = 1;           // 5 seconds between I-frames
+    private static final int FRAME_RATE = 30;              
+    public static final int IFRAME_INTERVAL = 1;          
     public static final int FILTER_FRAME = FRAME_RATE*IFRAME_INTERVAL;
     private volatile long encodeNumber = 0;
     private int videoWidth;

@@ -21,8 +21,8 @@ import java.util.concurrent.Semaphore;
  */
 
 public abstract class MediaEncoder implements Runnable {
-    private Semaphore semaphoreDataAvailable = new Semaphore(0);  //创建一个信号量
-    private Semaphore semaphoreWriteProtect = new Semaphore(1);  //创建一个信号量
+    private Semaphore semaphoreDataAvailable = new Semaphore(0); 
+    private Semaphore semaphoreWriteProtect = new Semaphore(1);  
     protected MediaCodec mediaCodec;
     protected MediaCodec.BufferInfo bufferInfo;
     protected final WeakReference<MediaMuxerWrapper> mediaMuxerWrapperWeakReference;
